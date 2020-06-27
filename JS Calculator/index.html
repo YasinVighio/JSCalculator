@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.13.0-web/css/all.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    
+    <div class="calculator-body">
+
+
+        <div class="calcu-info">
+            <h2>Calculator</h2>
+            <p>
+                By Yasin
+            </p>
+        </div>
+
+        <div class="calcu-screen-holder">
+            <input type="text" value="000000"  class="calcu-screen" id="scr" readonly>
+            <button id="history" class="history-button" onclick="getHistory()"> <i class="fas fa-history"></i> </button>
+        </div>
+
+        <div class="calcu-buttons">
+            <div class="row">
+                <button class="btn" onclick="onbtClick('sin(')"> sin() </button>
+                <button class="btn" onclick="onbtClick('cos(')"> cos() </button>
+                <button class="btn" onclick="onbtClick('tan(')"> tan() </button>
+                <button class="btn" onclick="backSpace()"> ⌫ </button>
+                <button class="btn" onclick="onbtClick('.')"> . </button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="onbtClick('^')"> ^ </button>
+                <button class="btn" onclick="onbtClick('(')"> ( </button>
+                <button class="btn" onclick="onbtClick(')')"> ) </button>
+                <button class="btn" onclick="onbtClick('c')"> C </button>
+                <button class="btn" onclick="onbtClick('=')"> = </button>
+            </div>
+
+            <div class="row">
+                <button class="btn"onclick="onbtClick('/')"> / </button>
+                <button class="btn" onclick="onbtClick('x')"> X </button>
+                <button class="btn" onclick="onbtClick('+')"> + </button>
+                <button class="btn" onclick="onbtClick('-')"> - </button>
+                <button class="btn" onclick="onbtClick('%')"> % </button>
+            </div>
+
+            <div class="row">
+                <button class="btn" onclick="onbtClick('5')"> 5 </button>
+                <button class="btn" onclick="onbtClick('6')"> 6 </button>
+                <button class="btn" onclick="onbtClick('7')"> 7 </button>
+                <button class="btn" onclick="onbtClick('8')"> 8 </button>
+                <button class="btn" onclick="onbtClick('9')"> 9 </button>
+            </div>
+
+            <div class="row" style="margin-bottom: 0px;">
+                <button class="btn" onclick="onbtClick('0')"> 0 </button>
+                <button class="btn"onclick="onbtClick('1')"> 1 </button>
+                <button class="btn" onclick="onbtClick('2')"> 2 </button>
+                <button class="btn" onclick="onbtClick('3')"> 3 </button>
+                <button class="btn" onclick="onbtClick('4')"> 4 </button>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="js/app.js"></script>
+</body>
+
+</html>

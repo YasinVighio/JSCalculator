@@ -1,0 +1,102 @@
+
+.calculator-body
+{
+    
+    border: 2px solid black;
+    height: 500px;
+    width: 340px;
+    margin: auto;
+    background-color: rgb(238, 238, 238);
+}
+
+.calcu-info
+{ 
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-image: linear-gradient(rgb(238, 238, 238), white, skyblue);
+
+}
+.calcu-info>h2
+{
+    font-family: broadway;
+    margin: 0px;
+}
+.calcu-info>p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-size: 15px;
+    color: gray;
+}
+
+.calcu-screen-holder
+{
+    border: 2px solid skyblue;
+    background-image: linear-gradient(rgb(238, 238, 238), white, rgb(238, 238, 238));
+    display: flex;
+    justify-content: space-around;
+    width: 305px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 8px;
+    padding: 5px;
+    padding-left: 10px;
+
+}
+.calcu-screen
+{
+    background-color: transparent;
+
+    border: none;
+    font-size: 20px;
+    width: 270px;
+    height: 40px;
+    margin-top: 3px;
+}
+.calcu-screen:focus
+{
+    outline: none;
+}
+
+.calcu-screen::-webkit-outer-spin-button,
+.calcu-screen::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.history-button
+{
+    margin: 0px;
+    background-color: transparent;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 3px;
+    border: 0px;
+}
+
+.calcu-buttons
+{
+    margin-top: 10px;
+    padding: 10px;
+}
+.row
+{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn
+{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(rgb(238, 238, 238), white, skyblue);
+    border: 1px solid skyblue;
+}
+.btn:active {
+    background-image: none;
+    background-color: rgb(238, 238, 238);
+    transform: translateY(-1px);
+  }
